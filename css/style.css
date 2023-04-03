@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background: url(../images/backgrounds/bg2.jpg) no-repeat;
+    background-size: cover;
+}
+
+a{
+    text-decoration: none;
+    color:#5f5f5f;
+}
+
+.navbar{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding:5px 6%;
+    position: sticky;
+    top:0;
+    z-index: 30;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.navbar .navL a img{
+    width: 80px;
+    display: block;
+    /* margin-left: 10px; */
+}
+
+.navbar .navC ul li{
+    display: inline-block;
+    list-style: none;
+}
+
+.navbar .navC ul li a{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    margin: 6px 6px;
+    padding-right: 6px;
+    position: relative;
+}
+.navbar .navC ul li a::after{
+    content: '';
+    width: 0;
+    height: 6px;
+    background: lightskyblue;
+    position: absolute;
+    bottom: -28px;
+    transition: width .4s;
+}
+
+.navbar .navC ul li a:hover::after{
+    width: 100%;
+}
+
+.navbar .navC ul li a img{
+    width: 35px;
+}
+
+.navbar .navR .navImg{
+    width: 40px;
+    border-radius: 50%;
+    display: block;
+    cursor: pointer;
+    position: relative;
+}
+
+.online{
+    position: relative;
+}
+
+.online::after{
+    content: '';
+    width: 15px;
+    height: 15px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    right: 0;
+    top: 0;
+    background: lightgreen;
+    position: absolute;
+}
+
+.navL .search{
+    background: #f1f1f1;
+    width: 250px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    margin-left: 10px;
+}
+.navL .search input{
+    margin-left: 10px;
+    width: 100%;
+    background: transparent;
+    padding: 8px;
+    outline: none;
+    border: none;
+}
+
+
+.navL{
+    display: flex;
+    align-items: center;
+}
+
+.content{
+    padding:20px 6%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.content .left{
+    flex-basis: 25%;
+    align-self: flex-start;
+}
+.content .left .profBox{
+    background: #222;
+}
+.content .left .profBox .profInfo{
+    padding: 0 25px;
+}
+.content .left .profBox .profInfo img{
+    width: 90px;
+    background-repeat: 50%;
+    background: aqua;
+    padding: 5px;
+    margin-top: -45px;
+}
+
+.content .left .profBox .profInfo h1{
+    padding-top:15px;
+    font-size: 20px;
+    font-weight: 600;
+    color: aquamarine;
+}
+.content .left .profBox .profInfo h2{
+    font-size: 14px;
+    font-weight: 500;
+    color: #f1f1f1;
+}
+.content .left .profBox .profInfo ul{
+    list-style: none;
+    margin: 20px 0;
+}
+
+.content .left .profBox .profInfo ul li{
+    color: #fff;
+    width: 100%;
+    margin-left: 0;
+    margin: 5px 0;
+    font-size: 13px;
+}
+.content .left .profBox .profInfo ul li span{
+    float:right;
+    color: aqua;
+}
+.content .left .profBox .profLink{
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #fff; 
+}
+
+.content .left .profBox .profLink a{
+    color:#f1f1f1;
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0;
+    font-size: 16px;
+    border-left: 1px solid #fff;
+}
+.content .left .profBox .profLink a img{
+    margin-right: 10px;
+}
+.content .left .profBox .profLink a:first-child{
+    border-left: 0;
+}
+.content .left .activity{
+    background: #222;
+    padding:5px 25px;
+    margin: 12px 0;
+}
+.content .left .activity h3{
+    color: #f1f1f1;
+    font-style: 14px;
+    font-weight: 500;
+    margin: 20px 0 15px;
+}
+
+.content .left .activity a{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 300;
+    color: aqua;
+    margin: 3px 0;
+}
+
+.content .left .activity a img{
+    width: 20px;
+    margin-right: 10px;
+}
+.content .left .discover{
+    border-top: 1px solid #fff;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: -25px;
+    margin-right: -25px;
+}
+
+.content .left .discover a{
+    color: skyblue;
+    display: inline-block;
+    margin: 10px 0;
+}
+
+.content .right{
+    flex-basis: 25%;
+    align-self: flex-start;
+}
+.content .right .news{
+    background: #222;
+    padding:10px 25px;
+}
+
+.content .right .news .infoicon{
+    width:15px;
+    float: right;
+    margin-top: 15px;
+}
+
+.content .right .news h3{
+    font-size: 18px;
+    font-weight: 18px;
+    color: #f1f1f1;
+    margin: 10px 0 30px;
+}
+.content .right .news a{
+    color: #fff;
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: -5px;
+}
+.content .right .news a span{
+    font-size: 12px;
+    color: aquamarine;
+}
+
+.content .right .news .read{
+    color: palevioletred;
+    padding: 30px;
+    padding-left: 0;
+}
+.content .right .ads{
+    background: #222;
+    padding:15px 25px;
+    text-align: center;
+    margin: 12px 0;
+    font-size: 12px;
+}
+
+.content .right .ads img{
+    width: 60px;
+    border-radius: 50%;
+    margin: 5px;
+}
+.content .right .ads small {
+    color:#fff;
+    float: right;
+    font-weight: 500;
+}
+
+.content .right .ads p{
+    color:#fff;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.content .right .ads b{
+    display: block;
+    font-weight: 500;
+    margin-top: 10px;
+    color: #f1f1f1;
+}
+.content .right .ads a{
+    display: inline-block;
+    border: 1px solid aqua;
+    border-radius: 30px;
+    padding: 5px;
+    color: aqua;
+    font-weight: 500;
+    margin: 20px auto 10px;
+}
+
+.content .right .usefulLinks{
+    /* background: #fff; */
+    padding: 15px 25px;
+    text-align: center;
+}
+
+.content .right .usefulLinks a{
+    color:#fff;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+}
+
+.content .right .copyright{
+    /* background: #fff; */
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+.content .right .copyright img{
+    width: 80px;
+    margin-right: 4px;
+}
+.content .center{
+    flex-basis: 45%;
+}
+
+
+
+
