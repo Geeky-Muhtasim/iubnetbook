@@ -124,6 +124,8 @@ a{
 .content .left{
     flex-basis: 25%;
     align-self: flex-start;
+    position: sticky;
+    top:73px;
 }
 .content .left .profBox{
     background: #222;
@@ -230,6 +232,8 @@ a{
 .content .right{
     flex-basis: 25%;
     align-self: flex-start;
+    position: sticky;
+    top:73px;
 }
 .content .right .news{
     background: #222;
@@ -337,6 +341,251 @@ a{
     flex-basis: 45%;
 }
 
+.content .center .createPost{
+    background: #222;
+}
 
+.content .center .createPost .postInput{
+    padding: 20px 25px;
+    display: flex;
+    align-items: flex-start;
+}
 
+.content .center .createPost .postInput img{
+    width: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
 
+.content .center .createPost .postInput textarea{
+    color: #fff;
+    width: 100%;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    margin-top: 8px;
+}
+
+.content .center .createPost .postInput ::placeholder{
+    font-weight: 500;
+    color: #fff;
+}
+
+.content .center .createPost .postLinks{
+    display: flex;
+    align-items: flex-start;
+}
+
+.content .center .createPost .postLinks li{
+    color: #fff;
+    list-style: none;
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    flex-basis: 25%;
+    height: 40px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.content .center .createPost .postLinks li img{
+    width: 15px;
+    margin-right: 5px;
+}
+
+.content .center .createPost .postLinks li:last-child{
+    background: navy;
+    color: #fff;
+    border-top: 0;
+    border-right: 0;
+}
+
+.content .center .sortBy{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.content .center .sortBy hr{
+    flex: 1;
+    border: 0;
+    height: 1px;
+    background: #fff;
+}
+.content .center .sortBy p{
+    font-size: 13px;
+    padding-left: 5px;
+}
+
+.content .center .sortBy p span{
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.content .center .sortBy p span img{
+    width: 12px;
+    margin-left: 3px;
+}
+
+.content .center .post{
+    background: #222;
+    padding: 20px 25px 5px;
+    margin: 5px 0 15px;
+}
+
+.content .center .post .postAuth{
+    display: flex;
+    align-items: flex;
+    margin-bottom: 20px;
+}
+
+.content .center .post .postAuth img{
+    width: 61px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.content .center .post .postAuth h1{
+    font-size: 18px;
+    font-weight: 600;
+    color: #f1f1f1;
+}
+
+.content .center .post .postAuth small{
+    color: aquamarine;
+    display: block;
+    margin-bottom: -2px;
+}
+
+.content .center .post p{
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 15px;
+
+}
+
+.content .center .postStats{
+    color: #f1f1f1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 6px;
+}
+
+.content .center .postStats div{
+    display: flex;
+    align-items: center;
+}
+
+.content .center .postStats img{
+    width: 15px;
+    margin-right: -5px;
+}
+
+.content .center .postStats .reactUsers{
+    margin-left: 10px;
+}
+
+.content .center .postActivity{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.content .center .postActivity div{
+    display: flex;
+    align-items: center;
+}
+
+.content .center .postActivity .acticon{
+    width: 22px;
+    border-radius: 50%;
+}
+
+.content .center .postActivity .arricon{
+    width: 12px;
+    margin-left: 5px;
+}
+
+.content .center .postActivity .postActLink img{
+    width:18px;
+    margin-right: 8px;
+}
+.content .center .postActivity .postActLink span{
+    color: #f1f1f1;
+}
+
+.menuWrap{
+    position: absolute;
+    top: 100%;
+    right:5%;
+    width: 320px;
+    z-index: 50;
+    max-height: 0;
+    overflow: hidden;
+    transform: max-height 0.4s;
+}
+.menuWrap.openMenu{
+    max-height: 400px;
+}
+.menuWrap .profMenu{
+    background: #222;
+    color: #fff;
+    padding: 20px;
+    margin: 10px;
+}
+
+.menuWrap .profMenu .userInfo{
+    display: flex;
+    align-items: center;
+}
+
+.menuWrap .profMenu .userInfo img{
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.menuWrap .profMenu .userInfo h3{
+    font-size: -7px;
+    font-weight: 500;
+}
+
+.menuWrap .profMenu .userInfo a{
+    color: #fff;
+    font-size: 13px;
+}
+.menuWrap .profMenu hr{
+    border:0;
+    height: 1px;
+    width: 100%;
+    background: #222;
+    margin:15px 0 10px;
+} 
+.menuWrap .profMenu .profMenuLink{
+    display: flex;
+    align-items:center;
+    color: #fff;
+    margin: 12px 0;
+    font-size: 14px;
+}
+
+.menuWrap .profMenu .profMenuLink p{
+    width: 100%;
+
+}
+.menuWrap .profMenu .profMenuLink img{
+    width: 35px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
